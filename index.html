@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Escolinha Sonho de Criança - Educação Infantil de Qualidade</title>
+  <link href="estilo.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+      <div class="top-bar">
+        <div class="contact">
+        <img src="imagens/yellow-telephone.png" alt="Ícone de telefone amarelo">
+        <p>Tel:(77)9948-3698/(77)9942-3830</p>
+        <img src="imagens/yellow-agenda.png" alt="Ícone de agenda amarela">
+        <p>Agendar Horário</p>
+      </div>
+
+      <div class="search">
+        <a href="https://wa.me/5577999483698" target="_blank"><button>Buscar</button></a>
+        <img src="imagens/preview 1.png" alt="imagem de whatts amarelo">
+       </div>
+      </div>
+
+    <div class="header-content">
+      <img src="imagens/Logo1.png" alt="Logo Escolinha" class="Logo">
+      <nav>
+         <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#sobre-nós">Sobre Nós</a></li>
+      <li><a href="#diferenciais">Diferenciais</a></li>
+      <li><a href="#contato">Contato</a></li>
+      </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home">
+    <div class="banner">
+      <img src="imagens/foto1.png" alt="imagem ">
+      <img src="imagens/Design.png" alt="imagem com banner">
+      <a href="#tudo-em-um-so-lugar"><button>Matricular</button></a>
+      <img src="imagens/img11.png" alt="imagem">
+    </div>
+  </section>
+
+  <section id="tudo-em-um-so-lugar">
+    <h1>Tudo em Um só lugar</h1>
+    <div> 
+      <div>
+        <h3>Inclusão Escolar</h3>
+        <img src="imagens/inclusão.png" alt="imagem de inclusão">
+        <button>Matricular</button>
+      </div>
+      <div>
+        <h3>Educação Infantil</h3>
+        <img src="imagens/Educação Infantil.png" alt="imagem">
+        <button>Matricular</button>
+      </div>
+    </div>
+  </section>
+  <section id="nao-perca-tempo">
+    <div>
+      <h4>Não perca tempo, faça agora a Matricula</h4>
+      <img src="imagens/opção 2.png" alt="imagem com banner">
+      <button>Matricular</button>
+    </div>
+  </section>
+
+  <section id="sobre-nós">
+    <div>
+      <h2>Sobre Nós</h2>
+      <p>A Escolinha Sonho de Criança, que atua desde 2010, oferece uma educação infantil de qualidade.
+     Fica localizada na Rua Antônio Aguiar no bairro da Vila Presidente Vargas (Brumado-ba).</p>
+      <p>Nossa metodologia valoriza o desenvolvimento emocional e intelectual das crianças,
+     tornando o aprendizado numa experiência prazerosa, com foco em atividades lúdicas e pedagógicas,
+     com profissionais experientes e dedicados que são preparados para atender às necessidades das 
+     crianças com muito carinho e zelo</p>
+    <p>Temos como objetivo apresentar nossa estrutura, nossos projetos e acompanhar o desenvolvimento 
+    de seus filhos, além de uma comunicação melhor com os pais que buscam uma educação de qualidade 
+    para crianças de 4 a 10 anos.</p>
+    <img src="imagens/diretora.png" alt="img">
+    <img src="imagens/escola-desenho.png" alt="imagem">
+    </div>
+  </section>
+
+  <section id="diferenciais">
+    <div>
+      <h2>Diferenciais</h2>
+      <h2>Bem vindos a Escolinha Sonho de Criança</h2>
+    </div>
+    <img src="imagens/ícone1.png" alt="imagem com banner">
+      <p>Em nossa escolinha acreditamos que a educação não consiste em apenas conhecimentos acadêmicos, 
+      mas também no desenvolvimento integral da criança.  Aqui, priorizamos a formação emocional e as
+      festas são inesquecíveis.</p>
+      <p> Com criatividade e dedicação, organizamos celebrações memoráveis, Nossos eventos são
+       verdadeiras experiências, repletos de diversão, aprendizado e interação.</p>
+       <div class="slider-container">
+        <div class="slider">
+          <img src="imagens/foto2.png" alt="Diferencial 2">
+          <img src="imagens/foto3.png" alt="Diferencial 3">
+          <img src="imagens/foto4.png" alt="Diferencial 4">
+          <img src="imagens/foto5.png" alt="Diferencial 5">
+          <img src="imagens/foto6.png" alt="Diferencial 6">
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button> <!-- Setinha para a esquerda -->
+        <button class="next" onclick="moveSlide(1)">&#10095;</button> <!-- Setinha para a direita -->
+      </div>
+      <script>
+        let currentIndex = 0;
+      
+        function moveSlide(direction) {
+          const slides = document.querySelectorAll('.slider img');
+          const totalSlides = slides.length;
+      
+          currentIndex += direction;
+          
+          if (currentIndex >= totalSlides) {
+            currentIndex = 0;
+          }
+      
+          if (currentIndex < 0) {
+            currentIndex = totalSlides - 1;
+          }
+      
+          const offset = -currentIndex * 100;
+          document.querySelector('.slider').style.transform = `translateX(${offset}%)`;
+        }
+      </script>
+  </section>
+
+  <section id="contato">
+    <div>
+      <img src="imagens/ícone2.png" alt="ícone">
+      <h2>É um prazer atender você!</h2>
+      <p>Entre em contato.</p>
+      <p>Estamos preparados para receber a sua familia.</p>
+      <p>Tel.: (77) 9948-3698 / (77) 9942-3830</p>
+        <form>
+          <input type="text" placeholder="Nome" required>
+          <input type="email" placeholder="Email" required>
+          <input type="tel" placeholder="Telefone" required>
+          <textarea placeholder="Mensagem"></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+    
+      <img src="imagens/ícone3.png" alt="ícone">
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <p>Escolinha Sonho de Criança</p>
+      <p>Endereço: Rua Antônio Aguiar, Bairro Vila Presidente Vargas, Brumado-BA</p>
+      <p>Tel: (77)9948-3698 </p>
+           <p>(77)9942-3830</p>
+      <p>Email: <a href="mailto:Escolinha.esc@gmail.com">Escolinha.esc@gmail.com</a></p>
+      <img src="imagens/Logo2.png" alt="Logo da escola">
+    </div>
+  </footer>
+</body>
+</html>

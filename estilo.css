@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #f9f9f9;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #E3BA16;
+}
+
+header .contact-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+header .contact-info img {
+  width: 35px;
+}
+
+header .contact-info p {
+  font-size: 14px;
+  color: #666;
+}
+
+header .contact-info button {
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+header .contact-info button:hover {
+  background-color: #0056b3;
+}
+
+header .logo img {
+  width: 150px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #1e90ff;
+  font-weight: bold;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #f3ca40;
+}
+
+/* Seção Home */
+#home {
+  background: linear-gradient(to bottom, #1e90ff, #87ceeb);
+  text-align: center;
+  padding: 50px 20px;
+  color: white;
+}
+
+#home h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#home img {
+  max-width: 100%;
+  height: auto;
+}
+
+#home button {
+  background-color: #f3ca40;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#home button:hover {
+  background-color: #d1a838;
+}
+
+/* Seção "Tudo em um só lugar" */
+#tudo-em-um-so-lugar {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#tudo-em-um-so-lugar h1 {
+  font-size: 2em;
+  color: #1e90ff;
+  margin-bottom: 20px;
+}
+
+#tudo-em-um-so-lugar div {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+#tudo-em-um-so-lugar div div {
+  background-color: #fff;
+  border: 2px solid #1e90ff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  box-sizing: border-box;
+  margin-bottom: 20px; /* Melhorar espaçamento em dispositivos menores */
+}
+
+#tudo-em-um-so-lugar div div img {
+  width: 100px;
+  height: auto;
+}
+
+#tudo-em-um-so-lugar div div button {
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#tudo-em-um-so-lugar div div button:hover {
+  background-color: #0056b3;
+}
+
+/* Seção "Sobre Nós" */
+#sobre-nós {
+  padding: 40px 20px;
+  background-color: #f3ca40;
+  color: #fff;
+}
+
+#sobre-nós h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#sobre-nós p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+#sobre-nós img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100px;
+}
+
+/* Seção Diferenciais */
+#diferenciais {
+  padding: 40px 20px;
+  background-color: #1e90ff;
+  color: white;
+}
+
+#diferenciais h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#diferenciais p {
+  margin: 15px 0;
+  text-align: justify;
+}
+
+/* Slider */
+.slider-container {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  width: 15%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+/* Botões de navegação (setas) para o slider */
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 252, 252, 0);
+  color: rgb(7, 7, 7);
+  border: none;
+  padding: 10px;
+  font-size: 50px; /* Ajustado */
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.slider button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Seção Contato */
+#contato {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+#contato form {
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#contato form input,
+#contato form textarea,
+#contato form button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#contato form button {
+  background-color: #1e90ff;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+#contato form button:hover {
+  background-color: #0056b3;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #f3ca40;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+  #home h1 {
+    font-size: 2rem;
+  }
+
+  #home button {
+    padding: 8px 16px;
+  }
+
+  #tudo-em-um-so-lugar div {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #tudo-em-um-so-lugar div div {
+    width: 80%; /* Ajustado para melhor responsividade */
+  }
+
+  .slider img {
+    width: 50%;
+  }
+
+  #contato form {
+    padding: 20px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+
+  /* Cabeçalho: ajuste para nav */
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header .logo img {
+    width: 120px; /* Reduzido o tamanho do logo */
+  }
+
+  /* Ajuste no botão de contato */
+  header .contact-info button {
+    font-size: 12px;
+  }
